@@ -1,5 +1,14 @@
 require "sinatra"
 
 get "/" do
-    index :erb
+    erb :index
+   
+end  
+
+post "/" do
+
+    @name = params[:name]
+    erb :index
+    
 end
+
